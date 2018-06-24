@@ -1,0 +1,1741 @@
+Script started on Sat Jun 23 22:48:32 2018
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;laris@dhcp-10-19-196-76: ~/GitHub/D-LINK_DSN-1100-10_REVA]1;..-1100-10_REVA[0m[27m[24m[J[01;32mâžœ  [36mD-LINK_DSN-1100-10_REVA[00m [01;34mgit:([31mmaster[34m) [33mâœ—[00m [K[?1h=[?2004hppicocom -b 9600 /dev/tty.usbserial[1m [0m[0m [?1l>[?2004l
+]2;picocom -b 9600 /dev/tty.usbserial]1;picocompicocom v3.1
+
+port is        : /dev/tty.usbserial
+flowcontrol    : none
+baudrate is    : 9600
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+hangup is      : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        : 
+omap is        : 
+emap is        : crcrlf,delbs,
+logfile is     : none
+initstring     : none
+exit_after is  : not set
+exit is        : no
+
+Type [C-a] [C-h] to see available commands
+Terminal ready
+
+Login incorrect
+
+hn001000C08500015X login: admin
+Password: 
+
+D-Link - xStack Storage
+
+1) Reset to factory defaults
+2) Reboot or shutdown the system
+3) Set the out-of-band port configuration
+4) Quit
+Enter number of desired option: 2
+
+1) Reboot
+2) Shutdown
+3) Cancel
+Enter number of desired option: 1
+
+Rebooting system... ...done
+
+Enter number of desired option: Shutdown INFO: Controller shutdown has been initiated for THIS to restart
+Shutdown INFO:  0 - Shutdown: Notify RCP Shutdown Initiated
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  1 - Shutdown: Notify SCC Shutdown Initiated
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  2 - Shutdown: Notify SCC Disable iSNS
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  3 - Shutdown: Notify SCC Set No-Listener
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  4 - Shutdown: Notify SCC Close All Connections
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  5 - Shutdown: Notify SCC Flush Cache
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  6 - Shutdown: Notify SCC Halt Volume Operations
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  7 - Shutdown: Notify Proxy Stop Responding to external events from RMC
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  8 - Shutdown: Notify RCP Shutdown Complete
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  9 - Shutdown: Notify HACC Shutdown Complete
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: 10 - Shutdown: Battery Manager Shutdown Complete
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: 11 - Shutdown: Notify Proxy to Halt All ARCs
+Shutdown INFO:      Sending message.
+Startup INFO: mailbox_handshake: I8K is in shutdown state... (0x81600000)
+Startup INFO: iam_alive: I8K signaled an orderly shutdown.
+Shutdown INFO: I-am-alive process has died due to I8K shutdown.
+Shutdown INFO:      iam_alive process is not running (003f).
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: 12 - Shutdown: Notify GUI that shutdown is finished
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: 13 - Shutdown: Notify ESM that shutdown is finished
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: Shutting down cimserver
+Shutdown INFO:   cimserver hasn't quit in 5 seconds.
+Shutdown INFO: Performing remaining cleanup.
+Shutdown INFO:    Stopping all children that are still running.
+Shutdown INFO:     bugcheck FALSE, forceExit TRUE, waitForChildren TRUE
+Shutdown INFO: Stopped process 287 (rcp), signal 9
+Shutdown INFO: Stopped process 281 (esa), signal 9
+Shutdown INFO: Stopped process 279 (webs1), signal 9
+Shutdown INFO: Stopped process 278 (webs), signal 9
+Shutdown INFO: Stopped process 270 (cimserver), signal 9
+Shutdown INFO: Stopped process 269 (batteryManager), signal 9
+Shutdown INFO: Stopped process 229 (cmapMain), signal 9
+Shutdown INFO: Stopped process 224 (/usr/sbin/ripd), signal 9
+Shutdown INFO: Stopped process 223 (/usr/sbin/zebra), signal 9
+Shutdown INFO: Stopped process 220 (isnsc), signal 9
+Shutdown INFO: Stopped process 216 (emp), signal 9
+Shutdown INFO: Stopped process 202 (msm), signal 15
+Shutdown INFO: Stopped process 201 (notificationMgr), signal 9
+Shutdown INFO:    Sleeping for a few seconds to let things settle.
+Shutdown INFO:     Disabling the Charger.
+Shutdown INFO:    Verifying all children are no longer running.
+Shutdown INFO:        Restore the contents of /istor/PERS from /istor/bufmem/PERS
+Shutdown INFO:    Deleting shared memory segment 65538.
+Shutdown INFO:    Deleting shared memory segment 32769.
+Shutdown INFO:    Closing ichar.
+Shutdown INFO:          Must remove device /dev/ichar.
+Shutdown INFO:          Must remove device /dev/bm.
+--- Shutdown complete!
+INIT: INIT: Unmounting remote filesystems... done. 
+Stopping periodic command scheduler: cron. 
+Stopping internet superserver: inetd.
+Stopping NFS common utilities: lockd statd. 
+Stopping portmap daemon: portmap. 
+Stopping system log daemon: klogd syslogd.
+Sending all processes the TERM signal... done.
+Sending all processes the KILL signal... done.
+Deactivating swap...done.
+Unmounting local filesystems...done.
+Starting reboot command: reboot
+Rebooting...
+Restarting system.
+Restarting the Board
+
+
+Promise Version: 2.9.2.9
+
+GIGASTOR U-Boot 1.1.6  (Mar  6 2012 - 15:25:45),
+  Build: Release
+
+CPU:   MPC8245 Revision 1.4 at 199.999 MHz: 16 kB I-Cache 16 kB D-Cache
+dBlade: boardrev# = 3, serial# = 001000C08500015X
+  Local Bus at 99.999 MHz
+I2C:   addr 7f: i2c speed set to 21
+ready
+DRAM:  63 MB
+boardID = XC02000C
+bladeType = 3, mgmtPortType = 1
+Now running in RAM - U-Boot at: 03ea7000 board_init_r@03eabe74
+FLASH:  2 MB
+NAND:  NAND device EC:DA 'NAND 256MiB 3,3V 8-bit' found
+256 MiB
+diag start address e200000, arc start addr e500000
+log start addr fb00000, max size 500000
+last entry fb00000
+env_relocate[252] offset = 0x3f97000
+env_relocate[266] malloced ENV at 03e18a60
+CFK env_relocate_spec gd->sector_addr:fffe0008 flash_addr->data:fffe0008
+crc returned=0x7a9fdf9a
+Partition=B gd->selector.active_boot_loader=0xfff10000
+addr 7f: i2c speed set to 21
+& get_version=03ec8460
+In:    serial
+Out:   serial
+Err:   serial
+misc_init_r(): 
+Do "i8k init" if blade fails here! 
+i8k_reset_init(): 
+release the reset on the ASIC (0)
+FLASH:  2 MB
+setting the CSOR
+release the reset on PLLs and SATA ( 82 )
+release the System from reset ( 80 )
+Initializing the PCI Bus
+pci_init (): 
+PCI:    scanning bus0 ...
+  bus dev fn venID devID class  rev MBAR0    MBAR1    IPIN ILINE
+PCI: bus 0 device 13 reading vendorId
+PCI: device 13 reading deviceId
+PCI: sending out for base address ix=16
+PCI: sending out for base address ix=20
+PCI: sending out for base address ix=24
+PCI: sending out for base address ix=28
+PCI: doing modl
+PCI: bus 0 device 13 to fetch interface info
+PCI: device 13 has fetched interface info
+  00  0d  00 8086  1209  020000 10  80000000 80000001 01   00
+PCI: bus 0 device 14 reading vendorId
+PCI: device 14 reading deviceId
+PCI: bus 0 device 14 to fetch interface info
+PCI: device 14 has fetched interface info
+Initializing the I2C Bus 3
+addr 7f: i2c speed set to 21
+Net:   
+i82559#0
+Boot process is finished
+PCI:    initializing iSNP8000 on bus(0), deviceid(14) ...
+  bus dev fn venID devID class  rev MBAR0    MBAR1    IPIN ILINE
+  00  0e  00 172a  8000  000000 01  00000004 00000001 00   00
+DMA_Initialize: done!
+Net:   i82559#0
+TGIF is not present.
+i2c_read of 0x68 return code (0), val c1
+Hit any key to stop autoboot:  5  4  3  2  1  0 
+diag skipped.
+### JFFS2 loading 'uImage' to 0x1000000
+Scanning JFFS2 FS:   | / - \ | / .  - \ | / - \ | / - \  done.
+### JFFS2 load complete: 1275292 bytes loaded to 0x1000000
+FLASH:  2 MB
+setting the CSOR
+release the reset on PLLs and SATA ( 82 )
+release the System from reset ( 80 )
+Initializing the PCI Bus
+pci_init (): 
+PCI:    scanning bus0 ...
+  bus dev fn venID devID class  rev MBAR0    MBAR1    IPIN ILINE
+  00  0d  00 8086  1209  020000 10  80000000 80000001 01   00
+Initializing the I2C Bus 3
+addr 7f: i2c speed set to 21
+Net:   
+i82559#0
+Boot process is finished
+dblade-asic i8k_init_r(): 
+release the reset on the ASIC (0)
+PCI:    initializing iSNP8000 on bus(0), deviceid(14) ...
+  bus dev fn venID devID class  rev MBAR0    MBAR1    IPIN ILINE
+  00  0e  00 172a  8000  000000 01  00000004 00000001 00   00
+Initialize the ATU on dblade-asic
+Initialize the DMA on dblade-asic
+## Booting image at 01000000 ...
+   Image Name:   Linux-2.6.28.7
+   Image Type:   PowerPC Linux Kernel Image (gzip compressed)
+   Data Size:    1275228 Bytes =  1.2 MB
+   Load Address: 00400000
+   Entry Point:  00400ad8
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+Memory <- <0x0 0x3f00000> (63MB)
+CPU clock-frequency <- 0x5f5e0fc (100MHz)
+CPU timebase-frequency <- 0x960 (0MHz)
+CPU bus-frequency <- 0x2580 (0MHz)
+
+zImage starting: loaded at 0x00400000 (sp: 0x03e160a8)
+Allocating 0x29e700 bytes for kernel ...
+gunzipping (0x00000000 <- 0x0040d000:0x006afb20)...done 0x289d98 bytes
+
+Linux/PowerPC load: root=/dev/mtdblock3 rootfstype=jffs2 rw panic=1 sc_start=0x001A0000 sc_size=0x00030000 ip=127.0.0.1:1.1.1.1:0.0.0.0:255.255.255.0:hn001000C08500015X:eth0:off console=ttyS0,9600
+Finalizing device tree... flat tree at 0x6bd300
+Gg µ4g‘Æs³ÏDvá' Åte|¯3ìfô™DÄ"ÈTflÆfE¿™0TVdvÄª	{d~Ôã@I: #Uçäæ³$æFn`ä•ä`Uu9¡g.|ö3æ]³$3·DçDÞîÂó3(mï tÿöô`nþÒF@?ìmYDïøsU3gˆVêÈ7˜#Tÿnþâ *ìoþ³°úæîf mæØÿl€vÿÙU«UDgˆþ»¢²ndtoe"@ä#F«DÑˆbr f™‘DV¢}b ô§DaþfÈå§DaÞ£DaöG!DW$nH;@1 ~	 v£æW@Ê22sÅÀ	Q{fý‘ì˜ ~˜?F vD'÷ TäÿÈ,ô#€Æ@rAEÿ`æ1î"4½¹Í½±•handover: boot [udbg0] -> real [ttyS0]
+serial8250.0: ttyS1 at MMIO 0xfc004600 (irq = 26) is a 16550A
+brd: module loaded
+loop: module loaded
+eepro100.c:v1.09j-t 9/29/99 Donald Becker
+eepro100.c: $Revision: 1.36 $ 2000/11/17 Modified by Andrey V. Savochkin <saw@saw.sw.com.sg> and others
+eth0: 0000:00:0d.0, 00:15:e9:1f:0c:1c, IRQ 16.
+  Board assembly a79574-001, Physical connectors present: RJ45
+  Primary interface chip i82555 PHY #1.
+    Secondary interface chip i82555.
+  General self-test: passed.
+  Serial sub-system self-test: passed.
+  Internal registers self-test: passed.
+  ROM checksum self-test: passed (0x14c7a6d0).
+/net/r8169.c (2.6.27.57).
+I2C-ENCLOSURE-enclosure_init_module: enclosure_init_module, about to register_chrdev enclosure interfaces
+TCP cubic registered
+NET: Registered protocol family 17
+IP-Config: Complete:,
+     host=hn001000C08500015X, domain=, nis-domain=(none),
+     bootserver=1.1.1.1, rootserver=1.1.1.1, rootpath=
+VFS: Mounted root (jffs2 filesystem).
+Freeing unused kernel memory: 184k init
+INIT: version 2.85 booting
+Calculating module dependencies
+Loading modules: 
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+sunrpc			OK
+lockd			OK
+nfs			OK
+cifs			OK
+jbd			OK
+ext3			OK
+Mounting local filesystems: mount nothing was mounted
+Starting portmap daemon: portmap. 
+Cleaning: /tmp /var/lock /var/run done.
+Updating /etc/motd, /etc/issue, and /etc/issue.net ...done.
+INIT: Entering runlevel: 2
+Starting system log daemon: syslogd klogd.
+Starting NFS common utilities: statd lockdlockdsvc: Function not implemented
+. 
+Starting internet superserver: inetd.
+Starting periodic command scheduler: cron. 
+Startup script starting.
+
+
+Press the Enter key to stop autostart: 
+   Startup menu:
+
+1.  Reset all admin account passwords
+2.  Download configuration
+3.  Enclosure Services Test Tool
+4.  Reset ALL persistence data to factory default values
+5.  Indicate DIMM replacement
+6.  Continue with boot operation
+
+Enter menu number desired: 3
+
+Running Enclosure Services Test tool
+Personality Toolkit XML File Path = [/istor/bin/../web/OEM/EnvPersonalityParams.xml].I2C driver path is [/dev/i2c-0]
+Succeeded to open the i2c device.
+
+
+************************************************************
+* Enclosure Services Test Main Menu                        *
+* 1. I2C Bus Control Test                                  *
+* 2. VSC055 Based Test                                     *
+* 3. W83792AD Based Test                                   *
+* 4. Exit                                                  *
+*                                                          *
+*                                                          *
+* Notes:                                                   *
+* (1) Selection 1 tests the connectivity with the I2C      *
+*     address.                                             *
+* (2) All other Enclosure Services Tests use the default   *
+*     I2C addresses according to iStor Enclosure Services  *
+*     Guidelines. The I2C addresses can be changed on the  *
+*     different menus.                                     *
+* (3) All the settings and testings under this Enclosure   *
+*     Services Test will not affect the operation of the   *
+*     Enclosure Services in the software.                  *
+************************************************************
+
+Select < 1 - 3, or 4 >                                     : 1
+
+
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 44
+
+
+Reading I2C with address [44] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 65
+
+
+Reading I2C with address [65] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 74
+
+
+Reading I2C with address [74] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 116
+
+
+Reading I2C with address [116] SUCCEEDS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 79
+
+
+Reading I2C with address [79] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 78
+
+
+Reading I2C with address [78] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 77
+
+
+Reading I2C with address [77] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 76
+
+
+Reading I2C with address [76] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 75
+
+
+Reading I2C with address [75] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 74
+
+
+Reading I2C with address [74] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 65
+
+
+Reading I2C with address [65] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 44
+
+
+Reading I2C with address [44] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : x
+
+Invalid argument.
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 1
+
+
+Reading I2C with address [1] FAILS.
+
+************************************************************
+* I2C Bus Control Test                                     *
+* Test I2C Address < 1 - 254 >                             *
+* Select < 44 > to test W83792AD I2C Address               *
+* Select < 65 > to test VSC055 I2C Address                 *
+* Select < 74 > to test LM75 (Middle) I2C Address          *
+* Select < 75 > to test LM75 (Right) I2C Address           *
+* Select < 76 > to test LM75 (Left) I2C Address            *
+* Select < 77 > to test LM75 (Aux 1) I2C Address           *
+* Select < 78 > to test LM75 (Aux 2) I2C Address           *
+* Select < 79 > to test LM75 (Aux 3) I2C Address           *
+* Select < 116 > to test PCA9539 I2C Address               *
+* Select other value within the range to test I2C Address. *
+* Select < 255 > to exit.                                  *
+*                                                          *
+*                                                          *
+* Example for W83792AD I2C Address:                        *
+* SW definition: 44(Decimal), 0x2C(Hexadecimal)            *
+* HW definition: 0101,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 254, or 255 >                                 : 255
+
+Exit from I2C Bus Control Test.
+
+************************************************************
+* Enclosure Services Test Main Menu                        *
+* 1. I2C Bus Control Test                                  *
+* 2. VSC055 Based Test                                     *
+* 3. W83792AD Based Test                                   *
+* 4. Exit                                                  *
+*                                                          *
+*                                                          *
+* Notes:                                                   *
+* (1) Selection 1 tests the connectivity with the I2C      *
+*     address.                                             *
+* (2) All other Enclosure Services Tests use the default   *
+*     I2C addresses according to iStor Enclosure Services  *
+*     Guidelines. The I2C addresses can be changed on the  *
+*     different menus.                                     *
+* (3) All the settings and testings under this Enclosure   *
+*     Services Test will not affect the operation of the   *
+*     Enclosure Services in the software.                  *
+************************************************************
+
+Select < 1 - 3, or 4 >                                     : 2
+
+
+
+************************************************************
+* VSC055 Based Enclosure Services Test Main Menu           *
+* 1. Initializing VSC055                                   *
+* 2. Setting I2C Address for VSC055                        *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Exit                                                  *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 1
+
+
+Cannot communicate with VSC055 with I2C Address [65]. No initialization.
+
+************************************************************
+* VSC055 Based Enclosure Services Test Main Menu           *
+* 1. Initializing VSC055                                   *
+* 2. Setting I2C Address for VSC055                        *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Exit                                                  *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 3
+
+
+Cannot communicate with VSC055 with I2C Address [65].
+
+************************************************************
+* VSC055 Based Enclosure Services Test Main Menu           *
+* 1. Initializing VSC055                                   *
+* 2. Setting I2C Address for VSC055                        *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Exit                                                  *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 5
+
+
+
+************************************************************
+* VSC055 Based Fan Speed Read Test                         *
+* Select Fan Index < 1 - 8 >                               *
+* Select < 9 > to set the Number of Fans                   *
+* Select < 10 > to set the Fan Speed Divisor               *
+* Select < 11 > to exit.                                   *
+*                                                          *
+*                                                          *
+* Current Number of Fans for VSC055 : [3]                  *
+* Current Fan PWM for VSC055        : [100] Percent        *
+*                                                          *
+************************************************************
+
+Select < 1 - 8, 9, 10, or 11 >                             : 1
+
+
+Failed to write the data to i2c addr 41
+Fan PWM is set to [100] Percent on Fan [1].
+Cannot communicate with VSC055 with I2C Address [65].
+************************************************************
+* VSC055 Based Fan Speed Read Test                         *
+* Select Fan Index < 1 - 8 >                               *
+* Select < 9 > to set the Number of Fans                   *
+* Select < 10 > to set the Fan Speed Divisor               *
+* Select < 11 > to exit.                                   *
+*                                                          *
+*                                                          *
+* Current Number of Fans for VSC055 : [3]                  *
+* Current Fan PWM for VSC055        : [100] Percent        *
+*                                                          *
+************************************************************
+
+Select < 1 - 8, 9, 10, or 11 >                             : 2
+
+
+Failed to write the data to i2c addr 41
+Fan PWM is set to [100] Percent on Fan [2].
+Cannot communicate with VSC055 with I2C Address [65].
+************************************************************
+* VSC055 Based Fan Speed Read Test                         *
+* Select Fan Index < 1 - 8 >                               *
+* Select < 9 > to set the Number of Fans                   *
+* Select < 10 > to set the Fan Speed Divisor               *
+* Select < 11 > to exit.                                   *
+*                                                          *
+*                                                          *
+* Current Number of Fans for VSC055 : [3]                  *
+* Current Fan PWM for VSC055        : [100] Percent        *
+*                                                          *
+************************************************************
+
+Select < 1 - 8, 9, 10, or 11 >                             : 11
+
+Exit from VSC055 Based Fan Speed Read Test.
+
+************************************************************
+* VSC055 Based Enclosure Services Test Main Menu           *
+* 1. Initializing VSC055                                   *
+* 2. Setting I2C Address for VSC055                        *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Exit                                                  *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 5
+
+
+
+************************************************************
+* VSC055 Based Fan Speed Read Test                         *
+* Select Fan Index < 1 - 8 >                               *
+* Select < 9 > to set the Number of Fans                   *
+* Select < 10 > to set the Fan Speed Divisor               *
+* Select < 11 > to exit.                                   *
+*                                                          *
+*                                                          *
+* Current Number of Fans for VSC055 : [3]                  *
+* Current Fan PWM for VSC055        : [100] Percent        *
+*                                                          *
+************************************************************
+
+Select < 1 - 8, 9, 10, or 11 >                             : 11
+
+Exit from VSC055 Based Fan Speed Read Test.
+
+************************************************************
+* VSC055 Based Enclosure Services Test Main Menu           *
+* 1. Initializing VSC055                                   *
+* 2. Setting I2C Address for VSC055                        *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Exit                                                  *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 6
+
+
+
+************************************************************
+* VSC055 Based Fan Speed Control Test                      *
+* Select Fan Index < 1 - 8 >                               *
+* Select < 9 > to exit.                                    *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 1
+
+************************************************************
+* Select PWM Percentage < 0, 25, 50, 75, 100 >             *
+* Select < 99 > to exit.                                   *
+*                                                          *
+*                                                          *
+* Current Fan PWM for VSC055 : [100] Percent               *
+*                                                          *
+************************************************************
+
+Select < 0, 25, 50, 75, 100, or 99 >                       : 0
+
+
+Failed to write the data to i2c addr 41
+Failed to write the data to i2c addr 41
+Fan PWM is set to [0] Percent on Fan [1].
+Cannot communicate with VSC055 with I2C Address [65].
+************************************************************
+* VSC055 Based Fan Speed Control Test                      *
+* Select Fan Index < 1 - 8 >                               *
+* Select < 9 > to exit.                                    *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 100
+
+Invalid argument.
+************************************************************
+* VSC055 Based Fan Speed Control Test                      *
+* Select Fan Index < 1 - 8 >                               *
+* Select < 9 > to exit.                                    *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 9
+
+Exit from VSC055 Based Fan Speed Read Test.
+
+************************************************************
+* VSC055 Based Enclosure Services Test Main Menu           *
+* 1. Initializing VSC055                                   *
+* 2. Setting I2C Address for VSC055                        *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Exit                                                  *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 7
+
+
+
+************************************************************
+* LM75 Based Temperature Read Test                         *
+* Select Temperature Sensor < 1 - 3 >                      *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > for setting I2C Address for LM75            *
+* Select < 8 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+************************************************************
+
+Select < 1 - 7, or 8 >                                     : 76
+
+Invalid argument.
+************************************************************
+* LM75 Based Temperature Read Test                         *
+* Select Temperature Sensor < 1 - 3 >                      *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > for setting I2C Address for LM75            *
+* Select < 8 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+************************************************************
+
+Select < 1 - 7, or 8 >                                     : 1
+
+
+Can Not Read Temperature Sensor on Left Hand Side.
+
+************************************************************
+* LM75 Based Temperature Read Test                         *
+* Select Temperature Sensor < 1 - 3 >                      *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > for setting I2C Address for LM75            *
+* Select < 8 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+************************************************************
+
+Select < 1 - 7, or 8 >                                     : 2
+
+
+Can Not Read Temperature Sensor on Right Hand Side.
+
+************************************************************
+* LM75 Based Temperature Read Test                         *
+* Select Temperature Sensor < 1 - 3 >                      *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > for setting I2C Address for LM75            *
+* Select < 8 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+************************************************************
+
+Select < 1 - 7, or 8 >                                     : 3
+
+
+Can Not Read Temperature Sensor in the middle.
+
+************************************************************
+* LM75 Based Temperature Read Test                         *
+* Select Temperature Sensor < 1 - 3 >                      *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > for setting I2C Address for LM75            *
+* Select < 8 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+************************************************************
+
+Select < 1 - 7, or 8 >                                     : 4
+
+
+Can Not Read Temperature Sensor Auxiliary 1.
+
+************************************************************
+* LM75 Based Temperature Read Test                         *
+* Select Temperature Sensor < 1 - 3 >                      *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > for setting I2C Address for LM75            *
+* Select < 8 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+************************************************************
+
+Select < 1 - 7, or 8 >                                     : 5
+
+
+Can Not Read Temperature Sensor Auxiliary 2.
+
+************************************************************
+* LM75 Based Temperature Read Test                         *
+* Select Temperature Sensor < 1 - 3 >                      *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > for setting I2C Address for LM75            *
+* Select < 8 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+************************************************************
+
+Select < 1 - 7, or 8 >                                     : 6
+
+
+Can Not Read Temperature Sensor Auxiliary 3.
+
+************************************************************
+* LM75 Based Temperature Read Test                         *
+* Select Temperature Sensor < 1 - 3 >                      *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > for setting I2C Address for LM75            *
+* Select < 8 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+************************************************************
+
+Select < 1 - 7, or 8 >                                     : 8\8/7
+
+
+
+************************************************************
+* LM75 Based I2C Bus Control Test                          *
+* Select < 1 - 6 > for LM75 Sensor                         *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+* Example for LM75 I2C Address:                            *
+* SW definition: 76(Decimal), 0x4C(Hexadecimal)            *
+* HW definition: 1001,100x(Binary). x means                *
+* read/write bit.                                          *
+************************************************************
+
+Select < 1 - 6, or 7 >                                     : 7
+
+Exit from LM75 Based I2C Bus Control Test.
+************************************************************
+* LM75 Based Temperature Read Test                         *
+* Select Temperature Sensor < 1 - 3 >                      *
+* Select < 1 > for Sensor on Left Hand Side                *
+* Select < 2 > for Sensor on Right Hand Side               *
+* Select < 3 > for Sensor in the Middle                    *
+* Select < 4 > for Sensor Auxiliary 1                      *
+* Select < 5 > for Sensor Auxiliary 2                      *
+* Select < 6 > for Sensor Auxiliary 3                      *
+* Select < 7 > for setting I2C Address for LM75            *
+* Select < 8 > to exit.                                    *
+*                                                          *
+*                                                          *
+* Current I2C Address for LM75 on Left Hand Side  : [ 76]  *
+* Current I2C Address for LM75 on Right Hand Side : [ 75]  *
+* Current I2C Address for LM75 in the Middle      : [ 74]  *
+* Current I2C Address for LM75 Auxiliary 1        : [ 77]  *
+* Current I2C Address for LM75 Auxiliary 2        : [ 78]  *
+* Current I2C Address for LM75 Auxiliary 3        : [ 79]  *
+*                                                          *
+************************************************************
+
+Select < 1 - 7, or 8 >                                     : 8
+
+Exit from LM75 Based Temperature Read Test.
+
+************************************************************
+* VSC055 Based Enclosure Services Test Main Menu           *
+* 1. Initializing VSC055                                   *
+* 2. Setting I2C Address for VSC055                        *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Exit                                                  *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 8
+
+
+
+************************************************************
+* VSC055 Backplane Alarm Control Test                      *
+* Select Backplane Alarm Control < 1 - 2 >                 *
+* Select < 1 > for turning ON the Alarm                    *
+* Select < 2 > for turning OFF the Alarm                   *
+* Select < 3 > to exit.                                    *
+************************************************************
+
+Select < 1 - 2, or 3 >                                     : 1
+
+
+Cannot communicate with VSC055 with I2C Address [65].
+************************************************************
+* VSC055 Backplane Alarm Control Test                      *
+* Select Backplane Alarm Control < 1 - 2 >                 *
+* Select < 1 > for turning ON the Alarm                    *
+* Select < 2 > for turning OFF the Alarm                   *
+* Select < 3 > to exit.                                    *
+************************************************************
+
+Select < 1 - 2, or 3 >                                     : 3
+
+Exit from VSC055 Based Backplane Alarm Control Test.
+
+************************************************************
+* VSC055 Based Enclosure Services Test Main Menu           *
+* 1. Initializing VSC055                                   *
+* 2. Setting I2C Address for VSC055                        *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Exit                                                  *
+************************************************************
+
+Select < 1 - 8, or 9 >                                     : 9
+
+Exit from VSC055 Main Test Menu.
+
+************************************************************
+* Enclosure Services Test Main Menu                        *
+* 1. I2C Bus Control Test                                  *
+* 2. VSC055 Based Test                                     *
+* 3. W83792AD Based Test                                   *
+* 4. Exit                                                  *
+*                                                          *
+*                                                          *
+* Notes:                                                   *
+* (1) Selection 1 tests the connectivity with the I2C      *
+*     address.                                             *
+* (2) All other Enclosure Services Tests use the default   *
+*     I2C addresses according to iStor Enclosure Services  *
+*     Guidelines. The I2C addresses can be changed on the  *
+*     different menus.                                     *
+* (3) All the settings and testings under this Enclosure   *
+*     Services Test will not affect the operation of the   *
+*     Enclosure Services in the software.                  *
+************************************************************
+
+Select < 1 - 3, or 4 >                                     : 3
+
+
+
+************************************************************
+* W83792AD Based Enclosure Services Test Main Menu         *
+* 1. Initializing W83792AD                                 *
+* 2. Setting I2C Address for W83792AD                      *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Register Write Test                                   *
+* 10. Register Read Test                                   *
+* 11. Exit                                                 *
+************************************************************
+
+Select < 1 - 10, or 11 >                                   : 10
+
+
+
+************************************************************
+* W83792AD Register Read Test                              *
+* Select Register Address < 1 - 206 >                      *
+* Select < 255 > to exit.                                  *
+************************************************************
+
+Select < 1 - 206, or 255 >                                 : 1
+
+
+Cannot communicate with W83792AD with I2C Address [44] with Register Address [1].
+************************************************************
+* W83792AD Register Read Test                              *
+* Select Register Address < 1 - 206 >                      *
+* Select < 255 > to exit.                                  *
+************************************************************
+
+Select < 1 - 206, or 255 >                                 : 255
+
+Exit from W83792AD Register Read Test.
+
+************************************************************
+* W83792AD Based Enclosure Services Test Main Menu         *
+* 1. Initializing W83792AD                                 *
+* 2. Setting I2C Address for W83792AD                      *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Register Write Test                                   *
+* 10. Register Read Test                                   *
+* 11. Exit                                                 *
+************************************************************
+
+Select < 1 - 10, or 11 >                                   : 1
+
+
+Cannot communicate with W83792AD with I2C Address [44]. No initialization.
+
+************************************************************
+* W83792AD Based Enclosure Services Test Main Menu         *
+* 1. Initializing W83792AD                                 *
+* 2. Setting I2C Address for W83792AD                      *
+* 3. Power Supply Status Test                              *
+* 4. Setting Drive Fault LED Test                          *
+* 5. Fan Speed Read Test                                   *
+* 6. Fan Speed Control Test                                *
+* 7. Temperature Sensors Read Test                         *
+* 8. Backplane Alarm Control Test                          *
+* 9. Register Write Test                                   *
+* 10. Register Read Test                                   *
+* 11. Exit                                                 *
+************************************************************
+
+Select < 1 - 10, or 11 >                                   : 11
+
+Exit from W83792AD Main Test Menu.
+
+************************************************************
+* Enclosure Services Test Main Menu                        *
+* 1. I2C Bus Control Test                                  *
+* 2. VSC055 Based Test                                     *
+* 3. W83792AD Based Test                                   *
+* 4. Exit                                                  *
+*                                                          *
+*                                                          *
+* Notes:                                                   *
+* (1) Selection 1 tests the connectivity with the I2C      *
+*     address.                                             *
+* (2) All other Enclosure Services Tests use the default   *
+*     I2C addresses according to iStor Enclosure Services  *
+*     Guidelines. The I2C addresses can be changed on the  *
+*     different menus.                                     *
+* (3) All the settings and testings under this Enclosure   *
+*     Services Test will not affect the operation of the   *
+*     Enclosure Services in the software.                  *
+************************************************************
+
+Select < 1 - 3, or 4 >                                     : 3\3/4
+
+Have A Nice Day.
+
+   Startup menu:
+
+1.  Reset all admin account passwords
+2.  Download configuration
+3.  Enclosure Services Test Tool
+4.  Reset ALL persistence data to factory default values
+5.  Indicate DIMM replacement
+6.  Continue with boot operation
+
+Enter menu number desired: 6
+
+Starting normal boot up.
+Maybe we'll rotate some log files.
+Size of Diagnostics dump partition is 0x08000000
+The partition is already formatted. File path /istor/diag_dump_partition_is_valid
+Running normal startup
+./startup -R1
+     Initializing temporary event log.
+      SU_EVENT_LOG not defined in environment.
+         Defining startup event log file name.
+       Ebm: module license 'Copyright (c) 2004 iStor Networks, Inc.' taints kernel.
+vent log is new, file: /var/tmp/StartupEvents.log
+Startup INFO: ----------------------------------------
+Startup INFO: Temporary Event log successfully opened.
+Startup INFO:    Filename: /var/tmp/StartupEvents.log
+Startup INFO:    Sat Jan  1 01:04:23 2000
+Startup INFO: Controller startup has been initiated
+Startup INFO:   Version 2.9.2.9
+Startup INFO:   buildmgr-Release
+Startup INFO:   Build time: Mar  6 2012 15:23:30
+Startup INFO:        bm module is not installed.  Installing...
+Startup INFO: Looping through steps in startup.
+Startup INFO:  0 - Processing: Make RAM-disk directory
+Startup INFO:      Preparing RAM disk and NVRAM+EVLOG disk paths.
+Startup INFO:        RAMDISK defined: /var/tmp
+Startup INFO:        NVRAMDIR defined: /istor/PERS
+Startup INFO:        EVLOGDIR defined: /istor/PERS
+Startup INFO:        RAM disk environment created (/var/tmp)
+Startup INFO:        NVRAM directory environment created (/istor/PERS)
+Startup INFO:        Event Log directory environment created (/istor/PERS)
+Startup INFO:  1 - Processing: Initialize signals
+Startup INFO:      Setting signal handlers.
+Startup INFO:  2 - Processing: Setup shared memory segment
+Startup INFO:      Creating shared memory segment.
+Startup INFO:        Shared memory segment ID is 32769
+Startup INFO:        Shared memory segment key is 0x010a0178
+Startup INFO:        CMAP Shared memory segment ID is 65538
+Startup INFO:        CMAP Shared memory segment key is 0x020a0178
+Startup INFO:      Core dumps enabled. Change the format of the core file creation
+Startup INFO:  3 - Processing: Get hardware info
+Startup INFO:      Collecting hardware register information.
+Startup INFO:      It appears we're running on a dBlade class board
+Startup INFO:      manufacturing ProductId is 000C, and manufacturing BoardRev is XC02
+Startup INFO:      Controller Slot ID = 0
+Startup INFO:      NOR Partition is set to B2
+Startup INFO:      NAND flash memory size is 256MB
+Startup INFO:      Changing MMSG directory to /var/tmp
+Startup INFO:      Changing NVRAM directory to /istor/PERS
+Startup INFO:      Changing EVLOG directory to /istor/PERS
+Startup INFO:  4 - Processing: Reset I8K
+Startup INFO:      Initial reset of ichar module
+Startup INFO:  5 - Processing: Open ichar device
+Startup INFO:        ichar module is not installed.  Installing...
+Startup INFO:      Number of data ports 4, number of pcix busses 1
+Startup INFO:  6 - Processing: Initialize the System Memory and Enable the Buffer Memory
+Startup INFO:      System memory is initialized
+Startup INFO:      Size of the System Memory is 256MB, and
+Startup INFO:      Size of the Buffer Memory is 256MB
+Startup INFO:  7 - Processing: Create the Buffer Memory block device and filesystem
+Startup INFO:      Creating block device in ichar.
+Startup INFO:      Creating new filesystem in buffer memory.
+Startup INFO:      Mounting new filesystem to /istor/bufmem.
+Startup INFO:        EVLOGDIR re-defined: /istor/bufmem/PERS
+Startup INFO:        Setting up OEM parameters for DLink
+Startup INFO:        Setting up SCSI Vendor ID = (DLink   )
+Startup INFO:        Setting up SCSI Product ID = (DLKATX          )
+Startup INFO:      Switching to use Alternate Event Log.
+Startup INFO:  8 - Processing: Run application - mytest2
+Startup INFO:      Successfully started child 204
+Startup INFO:      Received 4-byte response from mytest2 of 0x00000000
+Startup INFO:      Detected a child event.
+Startup INFO:        Child 0 (mytest2) has shut down.
+Startup INFO:  9 - Processing: Install HACC driver
+Startup INFO:       Running on ATX or MAUI and not SFF.
+Startup INFO:         Not installing haccDriver driver.
+Startup INFO: 10 - Processing: Initialize Email Notification Process
+Startup INFO:      Successfully started email notification process 205
+Startup INFO: 11 - Processing: Run application - msm
+Startup INFO:      Successfully started child 206
+Startup INFO:      Received 4-byte response from msm of 0x00000000
+Startup INFO: 12 - Processing: Initialize MMSG socket
+Startup INFO:      Connected to socket /var/tmp/startup
+Startup INFO: 13 - Processing: Check the emp log file
+Startup INFO: 14 - Processing: Run application - emp
+Startup INFO:      Successfully started child 220
+Startup INFO:      Successful init message received from emp
+Startup INFO: 15 - Processing: Skip starting emp -other
+Startup INFO: 16 - Processing: Run application - isnsc
+Startup INFO:      Successfully started child 224
+Startup INFO:      Successful init message received from isnsc
+Startup INFO: 17 - Processing: Run zebra
+Startup INFO:      Successfully started child 227
+Startup INFO: 18 - Processing: Run ripd
+Startup INFO:      Successfully started child 228
+Startup INFO: 19 - Processing: Run application - cmapMain
+Startup INFO:      Successfully started child 233
+Startup INFO:      Successful init message received from cmapMain
+Startup INFO: 20 - Processing: Initialize battery manager
+Startup INFO:      safe = 0 cvalid = 1 restart recovery:0
+Startup INFO:      Notify the CMAP of the Battery state change ( battery is charging )
+Startup INFO: 21 - Processing: Run application - cimserver
+Startup INFO:      Successfully started child 274
+Startup INFO:      Successful init message received from cimserver
+Startup INFO: 22 - Processing: Run web server
+Startup INFO:      Successfully started child 282
+Startup INFO: 23 - Processing: Run SSL web server
+Startup INFO:      Successfully started child 283
+Startup INFO: 24 - Processing: Setup the I8K
+Startup INFO: 25 - Processing: Load I8k firmware
+Startup INFO: 26 - Processing: Start Proxy ARC
+Startup INFO:      Proxy ARC is in startup phase ( mailbox content 0x80400000)
+Startup INFO:      Proxy ARC is started (step 1)
+Startup INFO:      Proxy ARC initialized the MSAQs (step 2)
+Startup INFO:      productID 000C was passed to Proxy ARC (step 3)
+Startup INFO:      revision information XC02 was passed to Proxy ARC (step 4)
+Startup INFO:      System memory information was passed to Proxy ARC (step 5)
+Startup INFO:      Buffer memory information was passed to Proxy ARC (step 6)
+Startup INFO:      The content of the buffer memory is valid (status=0x00000001)
+Startup INFO:      ASIC version 1 information was passed to Proxy ARC (step 7)
+Startup INFO:      ASIC device id 8000 was passed to Proxy ARC (step 8)
+Startup INFO:      PROXY ARC has initialized the System Memory (step 9)
+Startup INFO:      I8K interrupts are enabled (step a)
+Startup INFO: 27 - Processing: Install ieth driver
+Startup INFO: 28 - Processing: Run application - esa
+Startup INFO:      Successfully started child 285
+Startup INFO:      Successful init message received from esa
+Startup INFO: 29 - Processing: Run application - mytest2
+Startup INFO:      Successfully started child 290
+Startup INFO:      Received 4-byte response from mytest2 of 0x00000000
+Startup INFO:      Detected a child event.
+Startup INFO:        Child 15 (mytest2) has shut down.
+Startup INFO: 30 - Processing: Run application - rcp
+Startup INFO:      Successfully started child 291
+Startup INFO:      Successful init message received from rcp
+Startup INFO: 31 - Processing: Wait for Start I8K message
+Startup INFO:      Detected a child event.
+Startup INFO:        Child 8 (batteryManagerListener) has shut down.
+Startup INFO:      Received a valid request to start the I8k
+Startup INFO:      Sending message to PROXY with System Configuration.
+Startup INFO:      Valid response from PROXY.
+Startup INFO: Sending Notification message.
+Startup INFO: ------ Going into monitor mode. ------
+Startup INFO: RCP sequence completed. [M1 Standalone]
+Startup INFO: Controller startup has completed successfully.
+
+
+D-Link - xStack Storage: 192.168.0.111
+
+hn001000C08500015X login: admin
+Password: 
+
+D-Link - xStack Storage
+
+1) Reset to factory defaults
+2) Reboot or shutdown the system
+3) Set the out-of-band port configuration
+4) Quit
+Enter number of desired option: 4
+
+
+
+D-Link - xStack Storage: 192.168.0.111
+
+hn001000C08500015X login: admin
+Password: 
+
+D-Link - xStack Storage
+
+1) Reset to factory defaults
+2) Reboot or shutdown the system
+3) Set the out-of-band port configuration
+4) Quit
+Enter number of desired option: 2
+
+1) Reboot
+2) Shutdown
+3) Cancel
+Enter number of desired option: 2
+
+Shutting down system... Shutdown INFO: Controller shutdown has been initiated for THIS to halt
+Shutdown INFO:  0 - Shutdown: Notify RCP Shutdown Initiated
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  1 - Shutdown: Notify SCC Shutdown Initiated
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  2 - Shutdown: Notify SCC Disable iSNS
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  3 - Shutdown: Notify SCC Set No-Listener
+Shutdown INFO:      Sending message.
+...done
+
+Enter number of desired option: Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  4 - Shutdown: Notify SCC Close All Connections
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  5 - Shutdown: Notify SCC Flush Cache
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  6 - Shutdown: Notify SCC Halt Volume Operations
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  7 - Shutdown: Notify Proxy Stop Responding to external events from RMC
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  8 - Shutdown: Notify RCP Shutdown Complete
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO:  9 - Shutdown: Notify HACC Shutdown Complete
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: 10 - Shutdown: Battery Manager Shutdown Complete
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: 11 - Shutdown: Notify Proxy to Halt All ARCs
+Shutdown INFO:      Sending message.
+Startup INFO: mailbox_handshake: I8K is in shutdown state... (0x81600000)
+Startup INFO: iam_alive: I8K signaled an orderly shutdown.
+Shutdown INFO: I-am-alive process has died due to I8K shutdown.
+Shutdown INFO:      iam_alive process is not running (003f).
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: 12 - Shutdown: Notify GUI that shutdown is finished
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: 13 - Shutdown: Notify ESM that shutdown is finished
+Shutdown INFO:      Sending message.
+Shutdown INFO:      Valid response received.
+Shutdown INFO:      Sending indication message.
+Shutdown INFO: Shutting down cimserver
+Shutdown INFO:   cimserver hasn't quit in 5 seconds.
+Shutdown INFO: Performing remaining cleanup.
+Shutdown INFO:    Stopping all children that are still running.
+Shutdown INFO:     bugcheck FALSE, forceExit TRUE, waitForChildren TRUE
+Shutdown INFO: Stopped process 291 (rcp), signal 9
+Shutdown INFO: Stopped process 285 (esa), signal 9
+Shutdown INFO: Stopped process 283 (webs1), signal 9
+Shutdown INFO: Stopped process 282 (webs), signal 9
+Shutdown INFO: Stopped process 274 (cimserver), signal 9
+Shutdown INFO: Stopped process 273 (batteryManager), signal 9
+Shutdown INFO: Stopped process 233 (cmapMain), signal 9
+Shutdown INFO: Stopped process 228 (/usr/sbin/ripd), signal 9
+Shutdown INFO: Stopped process 227 (/usr/sbin/zebra), signal 9
+Shutdown INFO: Stopped process 224 (isnsc), signal 9
+Shutdown INFO: Stopped process 220 (emp), signal 9
+Shutdown INFO: Stopped process 206 (msm), signal 15
+Shutdown INFO: Stopped process 205 (notificationMgr), signal 9
+Shutdown INFO:    Sleeping for a few seconds to let things settle.
+Shutdown INFO:     Disabling the Charger.
+Shutdown INFO:    Verifying all children are no longer running.
+Shutdown INFO:        Restore the contents of /istor/PERS from /istor/bufmem/PERS
+Shutdown INFO:    Deleting shared memory segment 65538.
+Shutdown INFO:    Deleting shared memory segment 32769.
+Shutdown INFO:    Closing ichar.
+Shutdown INFO:          Must remove device /dev/ichar.
+Shutdown INFO:          Must remove device /dev/bm.
+--- Shutdown complete!
+INIT: INIT: Unmounting remote filesystems... done. 
+Stopping periodic command scheduler: cron. 
+Stopping internet superserver: inetd.
+Stopping portmap daemon: portmap. 
+Stopping system log daemon: klogd syslogd.
+Sending all processes the TERM signal... done.
+Sending all processes the KILL signal... done.
+Deactivating swap...done.
+Unmounting local filesystems...done.
+Starting halt command: halt
+Power down.
+power off the Board
+System Halted, OK to turn off power
+
+Terminating...
+Thanks for using picocom
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;laris@dhcp-10-19-196-76: ~/GitHub/D-LINK_DSN-1100-10_REVA]1;..-1100-10_REVA[0m[27m[24m[J[01;32mâžœ  [36mD-LINK_DSN-1100-10_REVA[00m [01;34mgit:([31mmaster[34m) [33mâœ—[00m [K[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                              ]2;laris@dhcp-10-19-196-76: ~/GitHub/D-LINK_DSN-1100-10_REVA]1;..-1100-10_REVA[0m[27m[24m[J[01;32mâžœ  [36mD-LINK_DSN-1100-10_REVA[00m [01;34mgit:([31mmaster[34m) [33mâœ—[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on Sat Jun 23 23:25:14 2018
